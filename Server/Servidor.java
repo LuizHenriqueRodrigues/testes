@@ -17,7 +17,7 @@ public class Servidor {
                 Socket client = server.accept();
                 
                 ThreadImparOuPar imparOuPar = new ThreadImparOuPar(client);
-                imparOuParstart();
+                imparOuPar.start();
 
         } 
                 }catch (Exception e) {

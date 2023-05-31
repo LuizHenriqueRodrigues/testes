@@ -49,16 +49,7 @@ public class Cliente {
             
             MsgResponse response = (MsgResponse) (in.readObject());
 
-            if (response.getStatus() == Status.SUCESSO) {
-                System.out.println("Resposta: "+ response.getValue());
-            } else {
-                if (response.getStatus() == Status.JOGADOR1_GANHOU) {
-                    System.out.println("erro. Divisao por zero");
-                } else {
-                    System.out.println("operador invalido" + Status.JOGADOR2_GANHOU);
-                }
-            }
-
+            
            } catch (Exception e) {
             
            } 

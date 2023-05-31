@@ -19,6 +19,8 @@ public class MsgResponse implements Serializable {
     public char getOperation() {
         return 0;
     }
+    public void setResultado(Object object) {
+    }
 
     
 
