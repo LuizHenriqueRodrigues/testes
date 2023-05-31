@@ -6,22 +6,29 @@ public class MsgResponse implements Serializable {
     
     private Status status;
     private double value;
+    private String resultado;
+
     public MsgResponse(Status status, double value) {
         this.status = status;
         this.value = value;
     }
+
     public Status getStatus() {
         return status;
     }
+
     public double getValue() {
         return value;
     }
-    public char getOperation() {
-        return 0;
-    }
-    public void setResultado(Object object) {
+
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
     }
 
-    
-
+    public String getResultado() {
+        return resultado;
+    }
 }
+
+
+
